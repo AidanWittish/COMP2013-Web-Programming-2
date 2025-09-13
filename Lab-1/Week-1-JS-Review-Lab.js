@@ -485,6 +485,10 @@ const listing0 = listings[0];
  * and currentOwner which is a string with the value of Jane Doe
  */
 //WRITE YOUR CODE BELOW
+const isSold = false;
+const currentOwner = "Jane Doe";
+const listing1 = {...listings[1], isSold, currentOwner};
+console.log(listing1);
 
 /**
  * Task-3: print to console a text using template literals that contains the name of the owner,
@@ -493,6 +497,7 @@ const listing0 = listings[0];
  * "This house at (address) is owned by (currentOwner)"
  */
 //WRITE YOUR CODE BELOW
+console.log(`This house at ${listing1.address} is owned by ${listing1.currentOwner}`);
 
 /**
  * NOTE: THIS TASK IS TRICKY!
@@ -509,13 +514,38 @@ const listing0 = listings[0];
  */
 //WRITE YOUR CODE BELOW
 
+
+//I just got stuck here, wasn't sure what to do
+const realtorFees = (listing) => {
+  const realtor = "";
+  if(listing[1] > "450000"){
+  }
+
+  return realtor;
+}
+
+
 /**
  * Task-5: Sort the listing array ascendingly in a new variable called listingAscendingly
  */
 //WRITE YOUR CODE BELOW
+const listingAscendingly = listings.sort(
+  (listA, listB) => listA.price - listB.price);
+
+console.log(listingAscendingly);
+
+//Don't know why this isn't working
 
 /**
  * Task-6: filter all the listings by bulitIn propertity for all houses built on or after 1990.
  * Name the variable newBuiltListings
  */
 //WRITE YOUR CODE BELOW
+
+const newBuiltListings = listings.filter(
+  (list) => parseInt(list.builtIn));
+
+console.log(newBuiltListings);
+
+//I didn't do amazing on this lab, so I hope I can pick things up/remember a
+//bit quicker from now on.
