@@ -42,11 +42,45 @@
 }
 
 .Card-Component{
-  margin: 0 10px;
+  margin: 0 5px;
+  justify-items: left;
 }
 
 .main-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.Resort-Location{
+  font-weight: bold;
+  color: black;
+}
+
+.Resort-Name{
+  font-weight: bold;
+  color:gray;
+}
+
+.Resort-Price{
+  color:gray;
+}
+
+
+.Rating-Bad{
+  color: red;
+}
+
+.Rating-Good{
+  color: green;
+}
+
+body{
+  color: gray;
+}
+
+.header-line{
+  color:grey;
+  height: 3px;
+  background-color: grey;
 }
